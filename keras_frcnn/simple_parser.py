@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 def scale(arg,factor=4.6):
-    return int(np.round(arg/factor))
+    return int(np.round(int(arg)/factor))
 
 def get_data(input_path):
 	found_bg = False
