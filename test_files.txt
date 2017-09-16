@@ -1,0 +1,2 @@
+data/train/negative/zzdUcpzsusVRsnA.JPG 
+data/train/positive/AApPkxlfOdiMjMs.JPG
