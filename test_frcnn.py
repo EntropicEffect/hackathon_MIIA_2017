@@ -218,7 +218,7 @@ for idx, img_name in enumerate(sorted(os.listdir(img_path))):
 			probs[cls_name].append(np.max(P_cls[0, ii, :]))
 
 	all_dets = []
-
+    print("bboxes=",bboxes)
 	for key in bboxes:
 		bbox = np.array(bboxes[key])
 
