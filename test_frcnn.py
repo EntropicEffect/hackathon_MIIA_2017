@@ -224,7 +224,7 @@ for idx, img_name in enumerate(sorted(os.listdir(img_path))):
 
 		new_boxes, new_probs = roi_helpers.non_max_suppression_fast(bbox, np.array(probs[key]), overlap_thresh=0.5)
 		for jk in range(new_boxes.shape[0]):
-			(x1, y1, x2, y2) = new_boxes[jk,:]
+          		(x1, y1, x2, y2) = new_boxes[jk,:]
 
 			(real_x1, real_y1, real_x2, real_y2) = get_real_coordinates(ratio, x1, y1, x2, y2)
 
@@ -242,6 +242,6 @@ for idx, img_name in enumerate(sorted(os.listdir(img_path))):
 
 	print('Elapsed time = {}'.format(time.time() - st))
 	print(all_dets)
-	cv2.imshow('img', img)
-	cv2.waitKey(0)
+	#cv2.imshow('img', img)
+	#cv2.waitKey(0)
 	# cv2.imwrite('./results_imgs/{}.png'.format(idx),img)
