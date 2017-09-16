@@ -28,7 +28,7 @@ def get_data(input_path):
 			else:
 				classes_count[class_name] += 1
 
-			if class_name not in class_mapping:
+			if class_name not in class_mapping and False:
 				if class_name == 'bg' and found_bg == False:
 					print('Found class name with special name bg. Will be treated as a background region (this is usually for hard negative mining).')
 					found_bg = True
