@@ -19,8 +19,9 @@ def get_data(input_path):
 		print('Parsing annotation files')
 
 		for line in f:
-			line_split = line.strip().split(',')
+			line_split = line.strip().split(' ')
 			(filename,class_name,x1,y1,x2,y2) = line_split
+			filename = "./hackathon_public/"+filename
 
 			if class_name not in classes_count:
 				classes_count[class_name] = 1
